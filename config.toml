@@ -1,4 +1,4 @@
-baseURL = "https://unrealyan.github.io/"
+baseURL = "https://unrealyan.github.io/tcms/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 publishDir = "docs"
