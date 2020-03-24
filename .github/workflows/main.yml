@@ -10,12 +10,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
+    
+    - name: Hugo Actions
+      uses: srt32/hugo-action@v0.0.3
 
-    - name: Hugo setup
-      uses: peaceiris/actions-hugo@v2.4.7
-      with:
-        # The Hugo version to download (if necessary) and use. Example: 0.58.2
-        hugo-version: v0.68.1
 
     - name: Build
       run: hugo --theme=book
