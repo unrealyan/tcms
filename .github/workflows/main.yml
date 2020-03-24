@@ -11,10 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.2.0
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v2.4.7
       with:
-        hugo-version: '0.58.3'
+        # The Hugo version to download (if necessary) and use. Example: 0.58.2
+        hugo-version: v0.68.1
 
     - name: Build
       run: hugo --theme=book
